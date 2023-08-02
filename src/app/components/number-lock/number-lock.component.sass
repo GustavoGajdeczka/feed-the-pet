@@ -24,8 +24,16 @@ button
   cursor: pointer
   transition: background-color 0.3s
 
+  backdrop-filter: blur(5.9px)
+  -webkit-backdrop-filter: blur(5.9px)
+  background: rgba(207, 124, 124, 0.89)
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+
   &:hover
     background-color: #eee
 
 .clear-button 
   margin-left: 5px
+  display: grid
+  grid-template-columns: repeat(1, 1fr)
+  grid-gap: 5px

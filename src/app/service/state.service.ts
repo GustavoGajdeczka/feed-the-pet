@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class StateService {
-  private _currentDoor = new BehaviorSubject<number>(1);
+  private _currentDoor = new BehaviorSubject<number>(0);
   private _locksFirstDoor = [false,false,false,false];
   private _locksSecondDoor = [false,false,false,false,false];
   private _count = new BehaviorSubject<boolean[]>(this._locksFirstDoor);
@@ -61,7 +61,7 @@ export class StateService {
   }
 
   verifyThirdDoor(password:string){
-    this.openDoor.next(password == '123');
+    this.openDoor.next(password == '28091998');
   }
 
   verifySecondDoor(){

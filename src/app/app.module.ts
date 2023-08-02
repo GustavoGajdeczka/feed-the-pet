@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,7 +33,8 @@ import { CatsRoomComponent } from './components/cats-room/cats-room.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    FormsModule 
+    FormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

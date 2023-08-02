@@ -1,4 +1,9 @@
 button
+  backdrop-filter: blur(5.9px)
+  -webkit-backdrop-filter: blur(5.9px)
+  background: rgba(207, 124, 124, 0.89)
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+
 .lockClose
   color: red
 .lockOpen
@@ -8,4 +13,8 @@ button
   button
     width:50px
     height: 100px
-    color:yellow
+
+.lock-small
+  button
+    &:hover
+      background-color: #eee

@@ -17,13 +17,19 @@ describe('AppComponent', () => {
   it(`should have as title 'feed-the-pet'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('feed-the-pet');
+    expect(app.title).equal('feed-the-pet');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('feed-the-pet app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).contain('feed-the-pet app is running!');
   });
+
+  describe('My First Test', () => {
+    it('Does not do much!', () => {
+      expect(true).to.equal(true)
+    })
+  })
 });
