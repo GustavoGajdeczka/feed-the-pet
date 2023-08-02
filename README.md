@@ -1,6 +1,6 @@
 # FeedThePet
 
-o projeto pode ser vizualizado por meio do link.
+o projeto pode ser vizualizado por meio do [link](https://gustavogajdeczka.github.io/feed-the-pet/).
 
 ## Servidor de desenvolvimento
 
