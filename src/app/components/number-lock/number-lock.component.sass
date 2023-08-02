@@ -1,0 +1,31 @@
+.calculator
+  width: 200px
+  margin: auto
+  padding: 10px
+
+.pad
+  display: flex
+  align-items: center
+
+.display
+  margin-bottom: 10px
+
+.buttons
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 5px
+
+button
+  padding: 10px
+  font-size: 18px
+  background-color: #fff
+  border: 1px solid #ccc
+  border-radius: 3px
+  cursor: pointer
+  transition: background-color 0.3s
+
+  &:hover
+    background-color: #eee
+
+.clear-button 
+  margin-left: 5px

@@ -1,0 +1,100 @@
+.door
+  position: relative
+  width: 170px
+  height: 270px
+  cursor: pointer
+  transform-style: preserve-3d
+  transform: perspective(2500px)
+  left: 23vw
+  bottom: 0
+
+.door-front-close
+  width: 170px
+  height: 270px
+  overflow: hidden
+  transform-origin: left
+  box-shadow: 30px 0 50px rgba(0, 0, 0, 0.2)
+  position: absolute
+  
+  background-color: #924500
+  z-index: 1
+  transition: .5s
+
+  &:before, &:after
+    content: ""
+    position: absolute
+    background-color: #924500
+    width: 105px
+    height: 75px
+    border: 10px ridge #b05500
+    left: 22.5px
+
+  &:before
+    top: 25px
+
+  &:after
+    top: 155px
+
+.door-front-open
+  width: 170px
+  height: 270px
+  overflow: hidden
+  transform-origin: left
+  box-shadow: 30px 0 50px rgba(0, 0, 0, 0.2)
+  position: absolute
+  background-color: #924500
+  z-index: 1
+  transition: .5s
+  transform: rotateY(-160deg)
+
+  &:before, &:after
+    content: ""
+    position: absolute
+    background-color: #924500
+    width: 105px
+    height: 75px
+    border: 10px ridge #b05500
+    left: 22.5px
+
+  &:before
+    top: 25px
+
+  &:after
+    top: 155px
+
+.knob
+  position: absolute
+  width: 20px
+  height: 30px
+  background-color: #eeba0b
+  top: 122px
+  left: 145px
+  border-radius: 2px
+
+  &:before
+    content: ""
+    position: absolute
+    border-radius: 50%
+    background-color: #f1c83c
+    width: 18px
+    height: 18px
+    left: -1px
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2)
+
+  &:after
+    content: ""
+    position: absolute
+    width: 4px
+    height: 7px
+    background-color: #333
+    top: 20px
+    left: 8.5px
+
+
+.door-back
+  position: relative
+  background: linear-gradient(0deg, rgba(193, 124, 116, 1) 13%, rgba(73, 88, 103, 1) 13%, rgba(79, 100, 124, 1) 15%, rgba(87, 115, 153, 1) 15%)
+  width: 100%
+  height: 100%
+  overflow: hidden
+  box-shadow: 30px 0 50px rgba(0, 0, 0, 0.2)

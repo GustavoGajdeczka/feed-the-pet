@@ -1,0 +1,12 @@
+<div class="door" (click)="nextDoor()">
+	<div class="door-front-close" *ngIf="!childData">
+		<div class="knob"></div>
+	</div>
+	<div class="door-front-open" *ngIf="childData" >
+		<div class="knob"></div>
+	</div>
+	<div class="door-back">
+		<h1>
+			Click to go to the next door</h1>
+	</div>
+</div>

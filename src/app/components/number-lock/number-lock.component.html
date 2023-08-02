@@ -1,0 +1,21 @@
+<div class="calculator">
+  <div class="display">
+    <input type="text" [(ngModel)]="numpad" disabled>
+  </div>
+  <div class="pad">
+    <div class="buttons">
+      <button (click)="addNumber(1)">1</button>
+      <button (click)="addNumber(2)">2</button>
+      <button (click)="addNumber(3)">3</button>
+      <button (click)="addNumber(3)">4</button>
+      <button (click)="addNumber(3)">5</button>
+      <button (click)="addNumber(3)">6</button>
+      <button (click)="addNumber(3)">7</button>
+      <button (click)="addNumber(3)">8</button>
+      <button (click)="addNumber(3)">9</button>
+    </div>
+    <div class="clear-button" >
+      <button (click)="clean()">C</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="lock-{{size}}">
+  <button (click)="switchLock()">
+    <ng-template #templateLockOpen [ngIf]="!lockOpen">
+      <div class="lockClose">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">lock</mat-icon>
+      </div>
+    </ng-template>
+    <ng-template #templateLockClose [ngIf]="lockOpen">
+      <div class="lockOpen">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">lock_open</mat-icon>
+      </div>
+    </ng-template>
+  </button>
+</div>
+

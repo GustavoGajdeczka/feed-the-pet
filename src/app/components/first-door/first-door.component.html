@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="lock">
+    <div class="lock-big">
+      <app-lock [size]="'big'" [lockNum]="0"
+        ></app-lock>
+    </div>
+    <div class="second-row">
+      <div >
+        <app-lock [lockNum]="1"
+          ></app-lock>
+      </div>
+      <div >
+        <app-lock [lockNum]="2"
+          ></app-lock>
+      </div>
+      <div >
+        <app-lock [lockNum]="3"
+          ></app-lock>
+      </div>
+    </div>
+  </div>
+
+  <div class="door">
+    <app-door [childData]="doorOpen"></app-door>
+  </div>
+</div>
+
