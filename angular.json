@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/https://github.com/GustavoGajdeczka/feed-the-pet/",
             "outputPath": "dist/feed-the-pet",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -99,11 +100,23 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "3634aaf1-d290-496a-8de9-8c055a231890"
+    "analytics": "3634aaf1-d290-496a-8de9-8c055a231890",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
